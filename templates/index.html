@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='demo.css')}}">
+    </head>
+  <body>
+    <style>
+      h1{
+        font-size:70px;
+        text-align: center; 
+      }
+     p1{
+        font-size:40px;
+        text-align:center; 
+        margin-left: 200px;
+      }
+      p2{
+        margin-left: 200px;
+        width:400px;
+        border: 2px ;
+             
+      }
+      p3{
+        margin-left: 800px;
+        height: 5em;
+              }
+      p4{    
+        margin-left: 500px;
+        font-size:2.5em;
+        width: fit-content;
+      }
+
+    </style>
+    <h1>Video Captioning</h1>
+    <div class="logo">
+     <img class="logo" src="static/pennstate_logo.png" style="width:100px;height:100px;position:fixed;left:0;top:0;">
+    </div>
+  <form action="{{url_for('video_feed')}}" method="GET"> 
+       
+    <p1>Select a video from the list and click on Play</p1><br><br><br><br><br><br><br>
+    
+    <p2><input type="file" name="vfile" /></p2>
+      <p3><input type="submit" value="Play Video" size="50"/></p3><br><br><br><br><br><br><br><br>
+      <p4><input type="submit" value="Predict Caption" formaction="{{url_for('predict')}}" method="GET" size="200"/></p4>
+
+    </form> 
+
+    
+    
+         
+
+  
+  </body>
+  
+</html>
