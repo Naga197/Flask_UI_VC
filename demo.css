@@ -1,0 +1,13 @@
+body{
+    margin:0;
+    font-family:sans-serif;
+    background-color: lightblue;
+}
+.logo{
+    
+    position: fixed;
+    left: 0; /* Adjust as needed */
+    top: 0; /* Adjust as needed */
+    z-index: 1; /* Adjust as needed */
+    }
+    
